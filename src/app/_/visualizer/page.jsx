@@ -1,8 +1,5 @@
 "use client";
-import React from "react";
-import CodeVisualizer from "../../components/code-visualizer";
-import CodeVisualizer from "../../components/code-visualizer";
-import CodeVisualizer from "../../components/code-visualizer";
+import React, { useState, useEffect } from "react";
 import CodeVisualizer from "../../components/code-visualizer";
 
 function CodeVisualizer({ code = "", theme = "light" }) {
