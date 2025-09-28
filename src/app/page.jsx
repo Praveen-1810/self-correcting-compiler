@@ -121,7 +121,7 @@ function MainComponent() {
     setErrorHighlights([]);
 
     try {
-      const response = await fetch("/integrations/chat-gpt/conversationgpt4", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -247,7 +247,7 @@ ${code}`,
         }
       } else {
         const response = await fetch(
-          "/integrations/chat-gpt/conversationgpt4",
+          "/api/chat",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -299,7 +299,7 @@ ${code}`,
     setIsTyping(true);
 
     try {
-      const response = await fetch("/integrations/chat-gpt/conversationgpt4", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
